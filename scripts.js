@@ -1,10 +1,10 @@
-let n = 12;
+let n = 96;
 let container = document.getElementById("container");
 
 while(n--) {
   div = document.createElement("div");
   div.setAttribute("class", "div-grid-element");
-  div.setAttribute("id", `div-${11 - n}`);
+  div.setAttribute("id", `div-${95 - n}`);
   div.setAttribute("dragable", false);
   container.appendChild(div);
 }
@@ -43,9 +43,9 @@ const onMouseUp = (e) => {
 let colorChosen = "green";
 const applyColor = (down, up) => {
     if(down > up) [down, up] = [up, down];
-    for(let i = 0; i < 12; i++) {
+    for(let i = 0; i < 96; i++) {
         if(i >= down && i <= up) {
-            if(i%4 < down%4 || i%4 > up%4) document.getElementById(`div-${i}`).style.backgroundColor = "white";
+            if(i%12 < down%12 || i%12 > up%12) document.getElementById(`div-${i}`).style.backgroundColor = "white";
             else document.getElementById(`div-${i}`).style.backgroundColor = colorChosen;
         } else {
             document.getElementById(`div-${i}`).style.backgroundColor = "white";
