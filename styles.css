@@ -1,0 +1,31 @@
+:root {
+  --selected-color: green;
+}
+
+#color-picker {
+  display: flex;
+  justify-content: center;
+  padding-top: 4%;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+  justify-content: center;
+  margin-top: 4%;
+  gap: 5px;
+}
+
+#container div {
+  background-color: white;
+  aspect-ratio: 1 / 1;
+  border-width: 2px;
+  border-style: solid;
+  border-color: lightgrey;
+  border-image: initial;
+  border-radius: 5%;
+}
+
+#container div:hover {
+  background-color: var(--selected-color);
+}
