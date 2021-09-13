@@ -1,7 +1,3 @@
-:root {
-  --selected-color: green;
-}
-
 #color-picker {
   display: flex;
   justify-content: center;
@@ -27,5 +23,5 @@
 }
 
 #container div:hover {
-  background-color: var(--selected-color);
+  cursor: pointer;
 }

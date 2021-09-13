@@ -6,12 +6,13 @@
     </head>
     <body>
         <div id="color-picker">
-            <label for="color">Pick a color:</label> &nbsp;&nbsp;&nbsp;
+            <label for="color">Pick a color:</label> &nbsp;
             <select name="color" id="color" onchange="onColorChange()">
                 <option value="green">Green</option>
                 <option value="red">Red</option>
                 <option value="yellow">Yellow</option>
-            </select>
+            </select> &nbsp;
+            <button onclick="clearAll()">Clear All</button>
         </div>
         <div id="container"></div>
     </body>
